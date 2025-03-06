@@ -1,9 +1,9 @@
-# Django Web Framework - Meta Course Completion 🚀
+# Django Web Framework - Meta Course Completion 
 
-## 📌 Course Overview
+##  Course Overview
 This repository contains all the lab exercises and projects I have completed as part of the **Django Web Framework** course offered by **Meta** on Coursera. The course covers the fundamentals of Django, a high-level Python web framework that enables rapid development and clean, pragmatic design.
 
-## 📚 Modules Covered
+##  Modules Covered
 - ✅ Introduction to Django
 - ✅ URL Routing & Views
 - ✅ Models & Database Management
@@ -11,19 +11,19 @@ This repository contains all the lab exercises and projects I have completed as 
 - ✅ Django Admin Panel Customization
 - ✅ Building & Deploying a Django Web Application
 
-## 🛠️ Technologies Used
-- **Python** 🐍
-- **Django Framework** 🌍
-- **SQLite / PostgreSQL** 🗃️
-- **HTML, CSS, JavaScript** 🎨
-- **Bootstrap** 📦
+## Technologies Used
+- **Python** 
+- **Django Framework** 
+- **SQLite / PostgreSQL** 
+- **HTML, CSS, JavaScript** 
+- **Bootstrap** 
 
 
 
-## 🏆 Certification
+## Certification
 I have successfully completed the **Django Web Framework** course by Meta and earned a certificate.
 
-## 👨‍💻 Author
+## Author
 **Tanmay Shinde**  
 📧 Email: tanmay.shinde23@pcu.edu.in 
 🔗 LinkedIn: [linkedin.com/in/your-profile](www.linkedin.com/in/tanmay-shinde-840a05340)
