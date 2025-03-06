@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',  # Add the app to the installed apps list
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
