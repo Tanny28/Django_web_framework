@@ -24,7 +24,7 @@ This repository contains all the lab exercises and projects I have completed as 
 I have successfully completed the **Django Web Framework** course by Meta and earned a certificate.
 
 ## 👨‍💻 Author
-**Your Name**  
+**Tanmay Shinde**  
 📧 Email: tanmay.shinde23@pcu.edu.in 
 🔗 LinkedIn: [linkedin.com/in/your-profile](www.linkedin.com/in/tanmay-shinde-840a05340)
 
