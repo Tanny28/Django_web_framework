@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp',  # Add the app to the installed apps list
+    'myapp',  # Ensure your app is listed here
 ]
+
 
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "myapp/templates"],  # Make sure this is correct
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +69,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
 

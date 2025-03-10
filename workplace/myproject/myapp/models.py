@@ -1,15 +1,11 @@
 from django.db import models
 
-class DrinksCategory(models.Model):
-    category_name = models.CharField(max_length=200)
+class Booking(models.Model):
+    first_name = models.CharField(max_length=200)
+    last_name = models.CharField(max_length=200)
+    guest_count = models.IntegerField()
+    reservation_time = models.DateField(auto_now=True)
+    comments = models.CharField(max_length=1000)
 
     def __str__(self):
-        return self.category_name
-
-class Drinks(models.Model):
-    drink = models.CharField(max_length=200)
-    price = models.IntegerField()
-    category_id = models.ForeignKey(DrinksCategory, on_delete=models.PROTECT, default=None)
-
-    def __str__(self):
-        return self.drink
+        return f"{self.first_name} {self.last_name} - {self.guest_count} Guests"

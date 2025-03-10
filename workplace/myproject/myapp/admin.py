@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import DrinksCategory, Drinks
+from .models import Booking
 
-admin.site.register(DrinksCategory)
-admin.site.register(Drinks)
+admin.site.register(Booking)

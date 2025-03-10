@@ -1,9 +1,6 @@
 from django.urls import path
-from . import views
+from .views import booking_view  # Ensure the correct view function is imported
 
 urlpatterns = [
-    path('', views.home, name="home"),  
-    path('aboutus/', views.about, name="about"),  # Changed from 'about/' to 'aboutus/'
-    path('menu/', views.menu, name="menu"),
-    path('book/', views.book, name="book"),
+    path("booking/", booking_view, name="booking"),  # Define the booking route
 ]
