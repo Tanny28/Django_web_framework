@@ -1,11 +1,19 @@
 from django.db import models
+from django.utils import timezone  # Import timezone
 
-class Booking(models.Model):
+class Employees(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
-    guest_count = models.IntegerField()
-    reservation_time = models.DateField(auto_now=True)
-    comments = models.CharField(max_length=1000)
+    role = models.CharField(max_length=100)
+    shift = models.IntegerField()
+
+    def __str__(self) -> str:
+        return self.first_name
+class Booking(models.Model):
+    
+   
+    date = models.DateTimeField(default=timezone.now)  # Add a default value
+
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.guest_count} Guests"
+        return self.name
