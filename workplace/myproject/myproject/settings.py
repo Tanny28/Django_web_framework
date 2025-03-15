@@ -75,11 +75,17 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+import pymysql
+pymysql.install_as_MySQLdb()
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'feedback',  # Database name
+        'USER': 'root',       # MySQL username
+        'PASSWORD': 'Tanny2810@60ssZ',       # MySQL password (empty by default)
+        'HOST': 'localhost',  # Default host
+        'PORT': '3306',       # Default MySQL port
     }
 }
 
