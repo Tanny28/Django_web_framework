@@ -1,4 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Menu
+
+def menu(request):
+    menu_items = Menu.objects.all()  # Fetch all menu items
+    items_dict = {"menu": menu_items}  # Store items in a dictionary
+    return render(request, "menu.html", items_dict)  # Pass data to template
 
 def about(request):
     about_content = {
