@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-</head>
-<body>
-    <h1>Menu</h1>
+{% extends 'base.html' %}
 
-    {% if menu %}
-        {% for item in menu %}
-            <p>{{ item.name }}: ${{ item.price }}</p>
-            <br>
-        {% endfor %}
-    {% else %}
-        <p>No items to display</p>
-    {% endif %}
+{% block title %}Menu - Little Lemon{% endblock %}
 
-</body>
-</html>
+{% block content %}
+    <h1>Our Menu</h1>
+    <p>Check out our delicious dishes!</p>
+{% endblock %}

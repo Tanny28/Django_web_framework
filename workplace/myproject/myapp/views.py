@@ -2,6 +2,18 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Menu
 
+def home(request):
+    return render(request, 'index.html')
+
+def menu(request):
+    return render(request, 'menu.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def book(request):
+    return render(request, 'book.html')
+
 def menu(request):
     menu_items = Menu.objects.all()  # Fetch all menu items
     items_dict = {"menu": menu_items}  # Store items in a dictionary

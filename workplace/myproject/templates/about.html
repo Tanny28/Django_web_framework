@@ -1,20 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Little Lemon</title>
-</head>
-<body>
-    <!-- Add heading code -->
-    <h1 style="color: #495E57">About Us</h1>
+{% extends 'base.html' %}
 
-    <!-- Add paragraph code -->
-    <p>{{ content.about }}</p>
+{% block title %}About Us - Little Lemon{% endblock %}
 
-    <!-- Add image code -->
-    <img src="{% static 'img/dessert.jpg' %}" alt="Delicious Dessert">
-</body>
-</html>
+{% block content %}
+    <h1>About Us</h1>
+    <p>This is an About page for Little Lemon.</p>
+{% endblock %}
